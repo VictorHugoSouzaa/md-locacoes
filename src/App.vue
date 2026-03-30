@@ -92,7 +92,7 @@ const equipamentos = ref([
 	{ id: 2, nome: 'Andaime Tubular 1m/1,5m', src: '/img/andaime.png' },
 	{ id: 3, nome: 'Compactador de Solo', src: '/img/comapctador.png' },
 	{ id: 4, nome: 'Martelo Demolidor 16kg', src: '/img/marteloDemolidor.png' },
-	{ id: 5, nome: 'Furadeira de Impacto', src: '/img/furadeira_1.png' },
+	{ id: 5, nome: 'Furadeira de Impacto', src: '/img/1774873925363.png' },
 	{ id: 6, nome: 'Furadeira Profissional', src: '/img/furadeira_2.png' },
 	{ id: 7, nome: 'Esmerilhadeira', src: '/img/esmerilhadeira.png' },
 	{ id: 8, nome: 'Martelete Rompedor', src: '/img/martelete.png' },
