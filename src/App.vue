@@ -89,7 +89,7 @@ const logoError = ref(false);
 
 const equipamentos = ref([
 	{ id: 1, nome: 'Betoneira 400L', src: '/img/1774877029627.png'},
-	{ id: 2, nome: 'Andaime Tubular 1m/1,5m', src: '/img/andaime.png' },
+	{ id: 2, nome: 'Andaime Tubular 1m/1,5m', src: '/img/1774877055193.png' },
 	{ id: 3, nome: 'Compactador de Solo', src: '/img/comapctador.png' },
 	{ id: 4, nome: 'Martelo Demolidor 16kg', src: '/img/1774874938485.png' },
 	{ id: 5, nome: 'Furadeira de Impacto', src: '/img/1774873925363.png' },
