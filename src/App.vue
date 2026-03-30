@@ -88,18 +88,22 @@ import { ref } from 'vue';
 const logoError = ref(false);
 
 const equipamentos = ref([
-	{ id: 1, nome: 'Furadeira de Impacto', src: '/img/furadeira_1.png' },
-	{ id: 2, nome: 'Furadeira Profissional', src: '/img/furadeira_2.png' },
-	{ id: 3, nome: 'Esmerilhadeira', src: '/img/esmerilhadeira.png' },
-	{ id: 4, nome: 'Martelete Rompedor', src: '/img/martelete.png' },
-	{ id: 5, nome: 'Soprador Térmico', src: '/img/soprador.png' },
-	{ id: 6, nome: 'Plaina Elétrica', src: '/img/plaina.png' },
-	{ id: 7, nome: 'Lixadeira de Cinta', src: '/img/lixadeira_cinta.png' },
-	{ id: 8, nome: 'Serra Tico-Tico', src: '/img/tico_tico.png' },
-	{ id: 9, nome: 'Parafusadeira a Bateria', src: '/img/parafusadeira.png' },
-	{ id: 10, nome: 'Serra Mármore', src: '/img/serra_marmore.png' },
-	{ id: 11, nome: 'Serra Circular', src: '/img/serra_circular.png' },
-	{ id: 12, nome: 'Policorte / Serra de Bancada', src: '/img/policorte.png' },
+	{ id: 1, nome: 'Betoneira 400L', src: '/img/betoneira.png'},
+	{ id: 2, nome: 'Andaime Tubular 1m/1,5m', src: '/img/andaime.png' },
+	{ id: 3, nome: 'Compactador de Solo', src: '/img/comapctador.png' },
+	{ id: 4, nome: 'Martelo Demolidor 16kg', src: '/img/marteloDemolidor.png' },
+	{ id: 5, nome: 'Furadeira de Impacto', src: '/img/furadeira_1.png' },
+	{ id: 6, nome: 'Furadeira Profissional', src: '/img/furadeira_2.png' },
+	{ id: 7, nome: 'Esmerilhadeira', src: '/img/esmerilhadeira.png' },
+	{ id: 8, nome: 'Martelete Rompedor', src: '/img/martelete.png' },
+	{ id: 9, nome: 'Soprador Térmico', src: '/img/soprador.png' },
+	{ id: 10, nome: 'Plaina Elétrica', src: '/img/plaina.png' },
+	{ id: 11, nome: 'Lixadeira de Cinta', src: '/img/lixadeira_cinta.png' },
+	{ id: 12, nome: 'Serra Tico-Tico', src: '/img/tico_tico.png' },
+	{ id: 13, nome: 'Parafusadeira a Bateria', src: '/img/parafusadeira.png' },
+	{ id: 14, nome: 'Serra Mármore', src: '/img/serra_marmore.png' },
+	{ id: 15, nome: 'Serra Circular', src: '/img/serra_circular.png' },
+	{ id: 16, nome: 'Policorte / Serra de Bancada', src: '/img/policorte.png' },
 ]);
 
 const falarCom = (quem, produto) => {
