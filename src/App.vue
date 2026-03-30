@@ -33,7 +33,7 @@
 						{{ item.nome }}
 					</h3>
 
-					<div class="flex flex-col gap-3 mt-auto w-full">
+					<div class="flex flex-row gap-3 mt-auto w-full">
 						<button
 							@click="falarCom('Cesar', item.nome)"
 							class="w-full bg-blue-700 hover:bg-blue-800 text-white py-3 rounded-lg text-xs font-bold flex items-center justify-center gap-2 transition-colors shadow-sm"
@@ -77,7 +77,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="bg-yellow-500 py-3 text-center text-blue-900 text-xs font-black uppercase w-full tracking-widest">Curitiba e Região Metropolitana</div>
+			<div class="bg-yellow-500 py-3 text-center text-blue-900 text-xs font-black uppercase w-full tracking-widest">São José Dos Pinhais</div>
 		</footer>
 	</div>
 </template>
