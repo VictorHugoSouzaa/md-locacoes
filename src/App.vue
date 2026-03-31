@@ -88,24 +88,24 @@ import { ref } from 'vue';
 const logoError = ref(false);
 
 const equipamentos = ref([
-	{ id: 1, nome: 'Betoneira 400L', src: '/img/1774877029627.png'},
-	{ id: 2, nome: 'Andaime Tubular 1m/1,5m', src: '/img/1774877055193.png' },
-	{ id: 3, nome: 'Perfurador de Solo', src: '/img/1774875312059.png' },
-	{ id: 4, nome: 'Escoras Metálicas', src: '/img/1774875067801.png' },
-	{ id: 5, nome: 'Compactador de Solo', src: '/img/1774889440147.png' },
-	{ id: 6, nome: 'Martelo Demolidor 16kg', src: '/img/1774874938485.png' },
-	{ id: 7, nome: 'Furadeira de Impacto', src: '/img/1774873925363.png' },
+	{ id: 1, nome: 'Betoneira 400L', src: '/img/betoneira.png'},
+	{ id: 2, nome: 'Andaime Tubular 1m/1,5m', src: '/img/andaime.png' },
+	{ id: 3, nome: 'Compactador de Solo', src: '/img/comapctador.png' },
+	{ id: 4, nome: 'Escoras Metálicas ', src: '/img/escoras.png' },
+	{ id: 5, nome: 'Perfurador de Solo', src: '/img/perfurador.png' },
+	{ id: 6, nome: 'Martelo Demolidor 16kg', src: '/img/marteloDemolidor.png' },
+	{ id: 7, nome: 'Furadeira de Impacto', src: '/img/furadeira_1.png' },
 	{ id: 8, nome: 'Furadeira Profissional', src: '/img/furadeira_2.png' },
 	{ id: 9, nome: 'Esmerilhadeira', src: '/img/esmerilhadeira.png' },
 	{ id: 10, nome: 'Martelete Rompedor', src: '/img/martelete.png' },
 	{ id: 11, nome: 'Soprador Térmico', src: '/img/soprador.png' },
 	{ id: 12, nome: 'Plaina Elétrica', src: '/img/plaina.png' },
-	{ id: 13, nome: 'Lixadeira de Cinta', src: '/img/1774874134161.png' },
-	{ id: 14, nome: 'Serra Tico-Tico', src: '/img/1774874150028.png' },
-	{ id: 15, nome: 'Parafusadeira a Bateria', src: '/img/1774874163970.png' },
-	{ id: 16, nome: 'Serra Mármore', src: '/img/1774874201509.png' },
+	{ id: 13, nome: 'Lixadeira de Cinta', src: '/img/lixadeira_cinta.png' },
+	{ id: 14, nome: 'Serra Tico-Tico', src: '/img/tico_tico.png' },
+	{ id: 15, nome: 'Parafusadeira a Bateria', src: '/img/parafusadeira.png' },
+	{ id: 16, nome: 'Serra Mármore', src: '/img/serra_marmore.png' },
 	{ id: 17, nome: 'Serra Circular', src: '/img/serra_circular.png' },
-	{ id: 18, nome: 'Policorte / Serra de Bancada', src: '/img/1774874217169.png' },
+	{ id: 18, nome: 'Policorte / Serra de Bancada', src: '/img/policorte.png' },
 ]);
 
 const falarCom = (quem, produto) => {
