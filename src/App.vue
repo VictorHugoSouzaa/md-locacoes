@@ -63,9 +63,13 @@
 					</div>
 
 					<h3
-						class="font-extrabold text-blue-900 uppercase text-xs md:text-sm text-center mb-6 min-h-[40px] flex items-center justify-center leading-tight px-2">
+						class="font-extrabold text-blue-900 uppercase text-xs md:text-sm text-center mb-2 min-h-[40px] flex items-center justify-center leading-tight px-2">
 						{{ item.nome }}
 					</h3>
+
+					<span class="text-[10px] font-bold uppercase text-blue-700 bg-blue-50 px-3 py-1 rounded-full mx-auto mb-3">
+						{{ item.categoria }}
+					</span>
 
 					<p class="text-slate-600 text-xs md:text-sm text-center leading-relaxed mt-auto px-2">
 						{{ item.descricao }}
@@ -125,24 +129,147 @@ const logoError = ref(false);
 const filtroProduto = ref('');
 
 const equipamentos = ref([
-	{ id: 1, nome: 'Betoneira 400L', src: '/img/betoneira.png', descricao: 'Equipamento ideal para mistura de concreto, argamassa e outros materiais em obras de pequeno e médio porte.' },
-	{ id: 2, nome: 'Andaime Tubular 1m/1,5m', src: '/img/andaime.png', descricao: 'Estrutura metálica utilizada para trabalhos em altura, oferecendo apoio e segurança durante reformas e construções.' },
-	{ id: 3, nome: 'Placa vibratória', src: '/img/comapctador.png', descricao: 'Máquina indicada para compactação de solos, areia, brita e pavimentos, garantindo melhor acabamento e estabilidade.' },
-	{ id: 4, nome: 'Compactador De Solo', src: '/img/Compactador_Solo.png', descricao: 'Equipamento usado para compactar terrenos e valas, ideal para preparação de bases em obras e pavimentações.' },
-	{ id: 5, nome: 'Escoras Metálicas', src: '/img/escoras.png', descricao: 'Suportes ajustáveis utilizados para sustentação temporária de lajes, vigas e estruturas durante a construção.' },
-	{ id: 6, nome: 'Perfurador de Solo', src: '/img/perfurador.png', descricao: 'Ferramenta prática para abertura de buracos no solo, muito usada em instalação de postes, cercas e fundações leves.' },
-	{ id: 7, nome: 'Martelo Demolidor 16kg', src: '/img/marteloDemolidor.png', descricao: 'Equipamento robusto para demolição de concreto, pisos, paredes e estruturas rígidas com alta eficiência.' },
-	{ id: 8, nome: 'Furadeira de Impacto', src: '/img/furadeira_1.png', descricao: 'Ferramenta versátil para perfurações em concreto, alvenaria, madeira e metal, ideal para obras e reformas.' },
-	{ id: 9, nome: 'Furadeira Profissional', src: '/img/furadeira_2.png', descricao: 'Equipamento de alto desempenho para perfurações precisas e uso contínuo em trabalhos profissionais.' },
-	{ id: 10, nome: 'Esmerilhadeira', src: '/img/esmerilhadeira.png', descricao: 'Ferramenta utilizada para corte, desbaste e acabamento em metais, pedras, concreto e outros materiais.' },
-	{ id: 11, nome: 'Soprador Térmico', src: '/img/soprador.png', descricao: 'Equipamento indicado para aquecer, remover tintas, moldar plásticos e realizar aplicações com ar quente.' },
-	{ id: 12, nome: 'Plaina Elétrica', src: '/img/plaina.png', descricao: 'Ferramenta usada para nivelar, desbastar e dar acabamento em superfícies de madeira com rapidez e precisão.' },
-	{ id: 13, nome: 'Lixadeira de Cinta', src: '/img/lixadeira_cinta.png', descricao: 'Ferramenta indicada para desbaste, nivelamento e acabamento em madeira e outras superfícies.' },
-	{ id: 14, nome: 'Serra Tico-Tico', src: '/img/tico_tico.png', descricao: 'Equipamento ideal para cortes curvos, retos e detalhados em madeira, plástico e materiais similares.' },
-	{ id: 15, nome: 'Parafusadeira a Bateria', src: '/img/parafusadeira.png', descricao: 'Ferramenta prática para apertar e remover parafusos com agilidade, ideal para montagens e instalações.' },
-	{ id: 16, nome: 'Serra Mármore', src: '/img/serra_marmore.png', descricao: 'Equipamento utilizado para cortes em pisos, azulejos, pedras, mármore e outros materiais de construção.' },
-	{ id: 17, nome: 'Serra Circular', src: '/img/serra_circular.png', descricao: 'Ferramenta indicada para cortes retos e precisos em madeira, MDF, compensados e materiais semelhantes.' },
-	{ id: 18, nome: 'Policorte / Serra de Bancada', src: '/img/policorte.png', descricao: 'Equipamento robusto para cortes rápidos e precisos em metais, tubos, barras e perfis.' },
+	// Mistura de concreto
+	{
+		id: 1,
+		nome: 'Betoneira 400L',
+		categoria: 'Mistura de Concreto',
+		src: '/img/betoneira.png',
+		descricao: 'Equipamento ideal para mistura de concreto, argamassa e outros materiais em obras de pequeno e médio porte.'
+	},
+
+	// Acesso e sustentação
+	{
+		id: 2,
+		nome: 'Andaime Tubular 1m/1,5m',
+		categoria: 'Acesso e Sustentação',
+		src: '/img/andaime.png',
+		descricao: 'Estrutura metálica utilizada para trabalhos em altura, oferecendo apoio e segurança durante reformas e construções.'
+	},
+	{
+		id: 5,
+		nome: 'Escoras Metálicas',
+		categoria: 'Acesso e Sustentação',
+		src: '/img/escoras.png',
+		descricao: 'Suportes ajustáveis utilizados para sustentação temporária de lajes, vigas e estruturas durante a construção.'
+	},
+
+	// Compactação
+	{
+		id: 3,
+		nome: 'Placa Vibratória',
+		categoria: 'Compactação',
+		src: '/img/comapctador.png',
+		descricao: 'Máquina indicada para compactação de solos, areia, brita e pavimentos, garantindo melhor acabamento e estabilidade.'
+	},
+	{
+		id: 4,
+		nome: 'Compactador de Solo',
+		categoria: 'Compactação',
+		src: '/img/Compactador_Solo.png',
+		descricao: 'Equipamento usado para compactar terrenos e valas, ideal para preparação de bases em obras e pavimentações.'
+	},
+
+	// Perfuração
+	{
+		id: 6,
+		nome: 'Perfurador de Solo',
+		categoria: 'Perfuração',
+		src: '/img/perfurador.png',
+		descricao: 'Ferramenta prática para abertura de buracos no solo, muito usada em instalação de postes, cercas e fundações leves.'
+	},
+	{
+		id: 8,
+		nome: 'Furadeira de Impacto',
+		categoria: 'Perfuração',
+		src: '/img/furadeira_1.png',
+		descricao: 'Ferramenta versátil para perfurações em concreto, alvenaria, madeira e metal, ideal para obras e reformas.'
+	},
+	{
+		id: 9,
+		nome: 'Furadeira Profissional',
+		categoria: 'Perfuração',
+		src: '/img/furadeira_2.png',
+		descricao: 'Equipamento de alto desempenho para perfurações precisas e uso contínuo em trabalhos profissionais.'
+	},
+
+	// Demolição
+	{
+		id: 7,
+		nome: 'Martelo Demolidor 16kg',
+		categoria: 'Demolição',
+		src: '/img/marteloDemolidor.png',
+		descricao: 'Equipamento robusto para demolição de concreto, pisos, paredes e estruturas rígidas com alta eficiência.'
+	},
+
+	// Corte
+	{
+		id: 14,
+		nome: 'Serra Tico-Tico',
+		categoria: 'Corte',
+		src: '/img/tico_tico.png',
+		descricao: 'Equipamento ideal para cortes curvos, retos e detalhados em madeira, plástico e materiais similares.'
+	},
+	{
+		id: 16,
+		nome: 'Serra Mármore',
+		categoria: 'Corte',
+		src: '/img/serra_marmore.png',
+		descricao: 'Equipamento utilizado para cortes em pisos, azulejos, pedras, mármore e outros materiais de construção.'
+	},
+	{
+		id: 17,
+		nome: 'Serra Circular',
+		categoria: 'Corte',
+		src: '/img/serra_circular.png',
+		descricao: 'Ferramenta indicada para cortes retos e precisos em madeira, MDF, compensados e materiais semelhantes.'
+	},
+	{
+		id: 18,
+		nome: 'Policorte / Serra de Bancada',
+		categoria: 'Corte',
+		src: '/img/policorte.png',
+		descricao: 'Equipamento robusto para cortes rápidos e precisos em metais, tubos, barras e perfis.'
+	},
+
+	// Acabamento
+	{
+		id: 10,
+		nome: 'Esmerilhadeira',
+		categoria: 'Acabamento',
+		src: '/img/esmerilhadeira.png',
+		descricao: 'Ferramenta utilizada para corte, desbaste e acabamento em metais, pedras, concreto e outros materiais.'
+	},
+	{
+		id: 11,
+		nome: 'Soprador Térmico',
+		categoria: 'Acabamento',
+		src: '/img/soprador.png',
+		descricao: 'Equipamento indicado para aquecer, remover tintas, moldar plásticos e realizar aplicações com ar quente.'
+	},
+	{
+		id: 12,
+		nome: 'Plaina Elétrica',
+		categoria: 'Acabamento',
+		src: '/img/plaina.png',
+		descricao: 'Ferramenta usada para nivelar, desbastar e dar acabamento em superfícies de madeira com rapidez e precisão.'
+	},
+	{
+		id: 13,
+		nome: 'Lixadeira de Cinta',
+		categoria: 'Acabamento',
+		src: '/img/lixadeira_cinta.png',
+		descricao: 'Ferramenta indicada para desbaste, nivelamento e acabamento em madeira e outras superfícies.'
+	},
+
+	// Fixação e montagem
+	{
+		id: 15,
+		nome: 'Parafusadeira a Bateria',
+		categoria: 'Fixação e Montagem',
+		src: '/img/parafusadeira.png',
+		descricao: 'Ferramenta prática para apertar e remover parafusos com agilidade, ideal para montagens e instalações.'
+	}
 ]);
 
 const equipamentosFiltrados = computed(() => {
