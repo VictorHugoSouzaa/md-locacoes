@@ -109,16 +109,18 @@
 		</button>
 	</div>
 
+<footer class="bg-blue-900 text-white border-t-4 border-yellow-400 py-6 px-6 mt-auto">
+	<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+		<p class="text-sm font-semibold">
+			Desenvolvido por
+			<span class="font-black text-yellow-400 uppercase">vhsolutions</span>
+		</p>
 
-	<footer>
-		<div>
-			<h3>pé</h3>
-		</div>
-		<div>
-			<Span>São josé dos Pinhais</Span>
-		</div>
-	</footer>
-
+		<p class="text-sm font-semibold">
+			São José dos Pinhais, 2026
+		</p>
+	</div>
+</footer>
 </template>
 
 <script setup>
