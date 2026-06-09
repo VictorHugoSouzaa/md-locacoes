@@ -26,7 +26,7 @@
 
 				<!-- Logo — clique volta ao topo -->
 				<a href="#" class="shrink-0">
-					<img src="/logo-md.png" alt="M&D Locações" class="h-12 w-auto object-contain" />
+					<img src="/logo-md.png" alt="M&D Locações" class="h-20 w-auto object-contain" />
 				</a>
 
 				<!-- Links de navegação — visíveis apenas em desktop (md+) -->
@@ -369,7 +369,7 @@
 			<div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
 				<!-- Coluna 1: marca -->
 				<div>
-					<img src="/logo-md.png" alt="M&D Locações" class="h-12 w-auto object-contain mb-3 brightness-0 invert" />
+					<img src="/logo-md.png" alt="M&D Locações" class="h-20 w-auto object-contain mb-3 brightness-0 invert" />
 					<p class="text-slate-300 text-sm leading-relaxed">Locação de equipamentos para construção civil, reformas e obras em São José dos Pinhais e região.</p>
 				</div>
 

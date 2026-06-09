@@ -1,58 +1,62 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>md-locacoes</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logo-md.png" />
+
+    <!-- SEO Principal -->
+    <title>M&D Locações | Aluguel de Equipamentos para Construção em São José dos Pinhais</title>
+    <meta name="description" content="M&D Locações oferece aluguel de equipamentos para construção civil, reformas e obras em São José dos Pinhais e região. Betoneiras, andaimes, compactadores, serras e mais. Entrega rápida e preço justo. Fale pelo WhatsApp!" />
+    <meta name="keywords" content="locação de equipamentos, aluguel de equipamentos, construção civil, betoneira, andaime, compactador, serra, reforma, obra, São José dos Pinhais, SJP, Paraná, M&D Locações" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="M&D Locações" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="M&D Locações | Aluguel de Equipamentos para Construção em São José dos Pinhais" />
+    <meta property="og:description" content="Aluguel de betoneiras, andaimes, compactadores, serras e muito mais em São José dos Pinhais e região. Entrega rápida e preço justo. Fale pelo WhatsApp!" />
+    <meta property="og:image" content="/logo-md.png" />
+    <meta property="og:site_name" content="M&D Locações" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="M&D Locações | Aluguel de Equipamentos para Construção" />
+    <meta name="twitter:description" content="Aluguel de equipamentos para construção civil em São José dos Pinhais e região. Fale pelo WhatsApp!" />
+    <meta name="twitter:image" content="/logo-md.png" />
+
+    <!-- Geo tags para SEO local -->
+    <meta name="geo.region" content="BR-PR" />
+    <meta name="geo.placename" content="São José dos Pinhais" />
+    <meta name="geo.position" content="-25.5333;-49.2083" />
+    <meta name="ICBM" content="-25.5333, -49.2083" />
+
+    <!-- Dados estruturados (JSON-LD) — LocalBusiness para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "M&D Locações",
+      "description": "Locação de equipamentos para construção civil, reformas e obras em São José dos Pinhais e região.",
+      "image": "/logo-md.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São José dos Pinhais",
+        "addressRegion": "PR",
+        "addressCountry": "BR"
+      },
+      "telephone": ["+55-41-99735-2785", "+55-41-99251-5319"],
+      "areaServed": "São José dos Pinhais e região",
+      "priceRange": "$$",
+      "openingHours": "Mo-Sa 08:00-18:00"
+    }
+    </script>
   </head>
   <body>
-    <div id="app">
-      <header class="bg-white border-b-4 border-yellow-400 shadow-sm">
-  <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
-
-    <!-- Lado esquerdo: Logo + Menu -->
-    <div class="flex items-center gap-8">
-      <!-- Logo / Home -->
-      <a href="#" class="flex items-center gap-3">
-        <img
-          src="/logo-md.png"
-          alt="M&D Locações"
-          class="h-14 w-auto object-contain"
-        />
-      </a>
-
-      <!-- Botões -->
-      <div class="hidden md:flex items-center gap-4">
-        <a
-          href="#sobre"
-          class="text-blue-900 font-bold uppercase text-sm hover:text-blue-600 transition-colors"
-        >
-          Sobre
-        </a>
-
-        <a
-          href="#contato"
-          class="bg-blue-800 hover:bg-blue-700 text-white font-bold uppercase text-sm px-4 py-2 rounded-lg transition-colors shadow-sm"
-        >
-          Entre em contato
-        </a>
-      </div>
-    </div>
-
-    <!-- Lado direito: Filtro -->
-    <div class="w-full max-w-xs">
-      <input
-        type="text"
-        v-model="filtroProduto"
-        placeholder="Filtrar produto..."
-        class="w-full px-4 py-2 rounded-lg border border-gray-300 bg-white text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-blue-700"
-      />
-    </div>
-
-  </nav>
-</header>
-    </div>
+    <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
