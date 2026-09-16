@@ -1,4 +1,4 @@
-# Vue 3 + Vite
+# Vue 3 + Vite + Bootstrap
 
 Site landing page institucional para uma empresa local, para divulgação e apresentação de seus principais produtos. 
 
