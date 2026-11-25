@@ -1,6 +1,18 @@
-# Vue 3 + Tailwind
+# MD Locações — Landing page
 
-Site landing page institucional para uma empresa local, para divulgação e apresentação de seus principais produtos. 
+Landing page institucional de uma empresa de locação de equipamentos, para divulgar e apresentar seus principais produtos.
+
+🔗 **Site no ar:** https://medlocacoes.com.br
+
+## Tecnologias
+- Vue 3
+- Vite
+- Tailwind CSS
+- Swiper (carrossel de produtos)
+
+## Como rodar
+npm install
+npm run dev
 
 
 <img width="1857" height="917" alt="image" src="https://github.com/user-attachments/assets/6478c458-bb1f-4cd9-80d0-9800e707e1fa" />
